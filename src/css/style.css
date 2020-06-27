@@ -1,0 +1,26 @@
+body {
+  color: #999;
+}
+
+.field {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+.cells {
+  background-color: antiquewhite;
+  outline: 2px solid #000;
+  width: 80px;
+  height: 80px;
+}
+
+.goblin {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+    margin-right: auto;
+}
