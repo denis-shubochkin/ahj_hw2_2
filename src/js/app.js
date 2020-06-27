@@ -5,7 +5,7 @@ const cells = document.getElementsByClassName('cells');
 const cellsCount = field.childElementCount;
 const startPos = Math.floor(0 + Math.random() * (cellsCount - 1));
 let currPos;
-function insertPic(position) {
+export default function insertPic(position) {
   do {
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < cells.length; i++) {
@@ -26,7 +26,6 @@ insertPic(startPos);
 function changePos() {
   document.getElementById('goblin').remove();
   const newPos = Math.floor(0 + Math.random() * (cellsCount - 1));
-  console.log(newPos);
   insertPic(newPos);
 }
 
