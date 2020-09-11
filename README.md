@@ -1,4 +1,6 @@
 
+[![Build status](https://ci.appveyor.com/api/projects/status/kiyaige6k3h0s7cn?svg=true)](https://ci.appveyor.com/project/denis-shubochkin/ahj-hw2)
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
