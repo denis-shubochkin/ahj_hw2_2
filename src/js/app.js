@@ -2,7 +2,8 @@
 
 const field = document.getElementById('field');
 const cells = document.getElementsByClassName('cells');
-const cellsCount = field.childElementCount;
+const cellsCount = field.children.length;
+
 const startPos = Math.floor(0 + Math.random() * (cellsCount - 1));
 let currPos;
 
