@@ -7,16 +7,14 @@ const startPos = Math.floor(0 + Math.random() * (cellsCount - 1));
 let currPos;
 
 export default function insertPic(position) {
-
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < cells.length; i++) {
-      if (i === position && position !== currPos) {
-        cells[i].innerHTML = '<img src="https://github.com/netology-code/ahj-homeworks/blob/master/dom/pic/goblin.png?raw=true" alt="goblin" id="goblin" class="goblin">';
-        currPos = position;
-        return;
-      }
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < cells.length; i++) {
+    if (i === position && position !== currPos) {
+      cells[i].innerHTML = '<img src="https://github.com/netology-code/ahj-homeworks/blob/master/dom/pic/goblin.png?raw=true" alt="goblin" id="goblin" class="goblin">';
+      currPos = position;
+      return;
     }
-
+  }
 }
 
 insertPic(startPos);
@@ -28,8 +26,8 @@ function changePos() {
   do {
     newPos = Math.floor(0 + Math.random() * (cellsCount - 1));
   }
-  while (currPos===newPos)
-  
+  while (currPos === newPos);
+
   insertPic(newPos);
 }
 
